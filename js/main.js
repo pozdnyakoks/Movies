@@ -8,11 +8,11 @@ document.querySelector('form').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const value = document.querySelector('.search').value.toLowerCase();
 
-  fetch(`http://www.omdbapi.com/?s=${value}&apikey=8f38710c`)
+  fetch(`https://www.omdbapi.com/?s=${value}&apikey=8f38710c`)
     .then(res => res.json())
     .then((data) => {
       Promise.all(
-        data.Search.map((film) => fetch(`http://www.omdbapi.com/?i=${film.imdbID}&apikey=8f38710c`).then((res) => res.json()))
+        data.Search.map((film) => fetch(`https://www.omdbapi.com/?i=${film.imdbID}&apikey=8f38710c`).then((res) => res.json()))
       ).then(result => {
         for (let filmObj of result) {
           let listInnerHTML = '';
