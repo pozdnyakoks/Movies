@@ -140,6 +140,14 @@ ul {
   gap: 21px;
   align-items: center;
   border-bottom: 1.5px solid #E5E7EB;
+  transition: .3s ease;
+}
+
+.film-item.delete {
+  padding: 0;
+  height: 0;
+  width: 0;
+  transform: scale(0)
 }
 
 .film-item img {
@@ -193,6 +201,8 @@ ul {
   line-height: 20px;
   color: #6B7280;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
 

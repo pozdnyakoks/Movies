@@ -33,8 +33,8 @@ function removeFilm(ev) {
     localStorage.clear()
     noData()
   }
-
-  renderPage();
+  document.getElementById(ev.target.parentElement.dataset.id).classList.add('delete')
+  setTimeout(renderPage, 300);
 
 }
 
