@@ -19,24 +19,19 @@
   <div class="wrapper">
     <header>
       <h1>Find your film</h1>
-      <a href="watchlist.html">My Watchlist</a>
-
-      <form action="">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input class="search" placeholder="Search for a movie">
-        <button class="btn">Search</button>
-      </form>
+      <a href="index.html">Search for movies</a>
     </header>
     <main>
-      <ul class="film-list">
-        <li class="empty-list-item">
-          <i class="fa-solid fa-film fa-5x"></i>
-          <p class="empty-add">Start exploring</p>
-        </li>
+      <ul class="film-list watchlist">
+        <p class="empty">Your watchlist is looking a little empty...</p>
+        <p class="empty-add">
+          <a href="index.html"><i class="fa-solid fa-circle-plus"></i></a></i>
+          Let’s add some movies!
+        </p>
       </ul>
     </main>
   </div>
-  <script src="/js/main.js" type="module"></script>
+  <script src="js/watchlist.js" type="module"></script>
 </body>
 
 </html>
